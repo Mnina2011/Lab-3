@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створення форм за допомогою HTML</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="2" align="center">Pizza Shop 2.0</td>
+    </tr>
+    <tr>
+        <td >Name:</td>
+        <td>
+            <form>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" required>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Pizza Topping:</td>
+        <td>
+            <form>
+                <label>
+                    <input type="radio" name="question" value="Supreme">
+                    Supreme
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Vegetarian">
+                    Vegetarian
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Hawaiian">
+                    Hawaiian
+                </label>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Pizza Sauce:</td>
+        <td> <select>
+            <option value="1">Tomato</option>
+            <option value="2">Vegetable</option>
+            <option value="3">White</option>
+            <option value="4">Cheese and mustard</option>
+            <option value="5">Cheese</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td >Optional Extras</td>
+        <td>
+            <form action="handler.php">
+                <p><input type="checkbox" name="a" >Extra Cheese</p>
+                <p><input type="checkbox" name="a" checked >Gluten Free Base</p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> Delivery Instructions:
+            <p>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message"></textarea> </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> <button type="submit">Send my Order</button>
+        </td>
+    </tr>
+</body>
+</html>
